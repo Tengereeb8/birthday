@@ -33,6 +33,10 @@
 //     </div>
 //   );
 // };
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
   return (
     <div className="bg-pink-300 min-h-screen flex justify-center items-center">
@@ -54,16 +58,26 @@ const birthday = [
 ];
 
 const BirthdayCard = () => {
+  const [birthdayList, setBirthdayList] = useState(birthday);
+  const clearBirthdayList = () => {
+    setBirthdayList([]);
+  };
   return (
-    <div className="w-150  bg-white text-black pl-20">
-      <h1 className="mt-8 text-[1.953rem]">
-        {birthday.length} Birthdays today
+    <div className="w-150  bg-white text-black  h-min">
+      <h1 className="mt-8 pl-20 text-[1.953rem]">
+        {birthdayList.length} Birthdays today
       </h1>
-
-      <div className="mt-6 flex flex-col gap-6 mb-6">
-        {birthday.map(({ id, name, age, image }) => (
+      <div className="mt-6 flex pl-20 flex-col gap-6 mb-6">
+        {birthdayList.map(({ id, name, age, image }) => (
           <BirthdayCardItem key={id} name={name} age={age} image={image} />
         ))}
+      </div>
+      {/* Remove w-148 and m-6. Use mx-auto to center it if it has a width. */}
+      <div
+        onClick={clearBirthdayList}
+        className="bg-pink-300 text-white w-[90%] mx-auto mb-6 flex justify-center h-10 items-center rounded-md cursor-pointer"
+      >
+        Clear all
       </div>
     </div>
   );
@@ -79,7 +93,7 @@ const BirthdayCardItem = ({ name, age, image }) => {
       />
       <div className="flex flex-col">
         <h1 className="font-semibold">{name}</h1>
-        <p className="text-gray-500">{age} years</p>
+        <p className="text-gray-700">{age} years</p>
       </div>
     </div>
   );
