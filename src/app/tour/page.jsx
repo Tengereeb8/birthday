@@ -3,9 +3,9 @@ import { useState } from "react";
 
 export default function Home() {
   return (
-    <div className="bg-white h-400 text-black flex justify-center items-center flex-col">
+    <div className="bg-white h-min text-black flex  items-center flex-col ">
       <div className="flex justify-center items-center">
-        <h1 className="text-center border-b-8 text-3xl border-green-400">
+        <h1 className="text-center border-b-8 text-3xl border-green-600">
           Our Tours
         </h1>
       </div>
@@ -20,7 +20,7 @@ const tourCards = [
     title: "Best of Paris In 7 days Tour",
     price: "1500$",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ex necessitatibus quas voluptatibus qui accusantium nemo quis temporibus eligendi consequuntur totam, dolorem esse amet nam quisquam laboriosam iusto suscipit.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Urna tempor pulvinar vivamus fringilla lacus nec metus. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Ligula congue sollicitudin erat viverra ac tincidunt nam. Cras eleifend turpis fames primis vulputate ornare sagittis. Cubilia curae hac habitasse platea dictumst lorem ipsum. Tempus leo eu aenean sed diam urna tempor. Taciti sociosqu ad litora torquent per conubia nostra. Maximus eget fermentum odio phasellus non purus est. Finibus facilisis dapibus etiam interdum tortor ligula congue. Nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Cursus mi pretium tellus duis convallis tempus leo. Ut hendrerit semper vel class aptent taciti sociosqu. Eros lobortis nulla molestie mattis scelerisque maximus eget. Ante condimentum neque at luctus nibh finibus facilisis. Arcu dignissim velit aliquam imperdiet mollis nullam volutpat. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Vitae pellentesque sem placerat in id cursus mi. Nisl malesuada lacinia integer nunc posuere ut hendrerit. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Suspendisse aliquet nisi sodales consequat magna ante condimentum. Euismod quam justo lectus commodo augue arcu dignissim. Venenatis ultrices proin libero feugiat tristique accumsan maecenas. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Nec metus bibendum egestas iaculis massa nisl malesuada. Natoque penatibus et magnis dis parturient montes nascetur. Vestibulum fusce dictum risus blandit quis suspendisse aliquet. Tincidunt nam porta elementum a enim euismod quam.",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const tourCards = [
     title: "Best of NY 14 days Tour",
     price: "1500$",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ex necessitatibus quas voluptatibus qui accusantium nemo quis temporibus eligendi consequuntur totam, dolorem esse amet nam quisquam laboriosam iusto suscipit.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Urna tempor pulvinar vivamus fringilla lacus nec metus. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Ligula congue sollicitudin erat viverra ac tincidunt nam. Cras eleifend turpis fames primis vulputate ornare sagittis. Cubilia curae hac habitasse platea dictumst lorem ipsum. Tempus leo eu aenean sed diam urna tempor. Taciti sociosqu ad litora torquent per conubia nostra. Maximus eget fermentum odio phasellus non purus est. Finibus facilisis dapibus etiam interdum tortor ligula congue. Nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Cursus mi pretium tellus duis convallis tempus leo. Ut hendrerit semper vel class aptent taciti sociosqu. Eros lobortis nulla molestie mattis scelerisque maximus eget. Ante condimentum neque at luctus nibh finibus facilisis. Arcu dignissim velit aliquam imperdiet mollis nullam volutpat. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Vitae pellentesque sem placerat in id cursus mi. Nisl malesuada lacinia integer nunc posuere ut hendrerit. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Suspendisse aliquet nisi sodales consequat magna ante condimentum. Euismod quam justo lectus commodo augue arcu dignissim. Venenatis ultrices proin libero feugiat tristique accumsan maecenas. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Nec metus bibendum egestas iaculis massa nisl malesuada. Natoque penatibus et magnis dis parturient montes nascetur. Vestibulum fusce dictum risus blandit quis suspendisse aliquet. Tincidunt nam porta elementum a enim euismod quam.",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const tourCards = [
     title: "Best of Italy 7 days Tour",
     price: "1500$",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ex necessitatibus quas voluptatibus qui accusantium nemo quis temporibus eligendi consequuntur totam, dolorem esse amet nam quisquam laboriosam iusto suscipit.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Urna tempor pulvinar vivamus fringilla lacus nec metus. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Ligula congue sollicitudin erat viverra ac tincidunt nam. Cras eleifend turpis fames primis vulputate ornare sagittis. Cubilia curae hac habitasse platea dictumst lorem ipsum. Tempus leo eu aenean sed diam urna tempor. Taciti sociosqu ad litora torquent per conubia nostra. Maximus eget fermentum odio phasellus non purus est. Finibus facilisis dapibus etiam interdum tortor ligula congue. Nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Cursus mi pretium tellus duis convallis tempus leo. Ut hendrerit semper vel class aptent taciti sociosqu. Eros lobortis nulla molestie mattis scelerisque maximus eget. Ante condimentum neque at luctus nibh finibus facilisis. Arcu dignissim velit aliquam imperdiet mollis nullam volutpat. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Vitae pellentesque sem placerat in id cursus mi. Nisl malesuada lacinia integer nunc posuere ut hendrerit. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Suspendisse aliquet nisi sodales consequat magna ante condimentum. Euismod quam justo lectus commodo augue arcu dignissim. Venenatis ultrices proin libero feugiat tristique accumsan maecenas. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Nec metus bibendum egestas iaculis massa nisl malesuada. Natoque penatibus et magnis dis parturient montes nascetur. Vestibulum fusce dictum risus blandit quis suspendisse aliquet. Tincidunt nam porta elementum a enim euismod quam.",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const tourCards = [
     title: "Best of Paris In 7 days Tour",
     price: "1500$",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ex necessitatibus quas voluptatibus qui accusantium nemo quis temporibus eligendi consequuntur totam, dolorem esse amet nam quisquam laboriosam iusto suscipit.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Urna tempor pulvinar vivamus fringilla lacus nec metus. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Ligula congue sollicitudin erat viverra ac tincidunt nam. Cras eleifend turpis fames primis vulputate ornare sagittis. Cubilia curae hac habitasse platea dictumst lorem ipsum. Tempus leo eu aenean sed diam urna tempor. Taciti sociosqu ad litora torquent per conubia nostra. Maximus eget fermentum odio phasellus non purus est. Finibus facilisis dapibus etiam interdum tortor ligula congue. Nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Cursus mi pretium tellus duis convallis tempus leo. Ut hendrerit semper vel class aptent taciti sociosqu. Eros lobortis nulla molestie mattis scelerisque maximus eget. Ante condimentum neque at luctus nibh finibus facilisis. Arcu dignissim velit aliquam imperdiet mollis nullam volutpat. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Vitae pellentesque sem placerat in id cursus mi. Nisl malesuada lacinia integer nunc posuere ut hendrerit. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Suspendisse aliquet nisi sodales consequat magna ante condimentum. Euismod quam justo lectus commodo augue arcu dignissim. Venenatis ultrices proin libero feugiat tristique accumsan maecenas. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Nec metus bibendum egestas iaculis massa nisl malesuada. Natoque penatibus et magnis dis parturient montes nascetur. Vestibulum fusce dictum risus blandit quis suspendisse aliquet. Tincidunt nam porta elementum a enim euismod quam.",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const tourCards = [
     title: "Best of Paris In 7 days Tour",
     price: "1500$",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ex necessitatibus quas voluptatibus qui accusantium nemo quis temporibus eligendi consequuntur totam, dolorem esse amet nam quisquam laboriosam iusto suscipit.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Urna tempor pulvinar vivamus fringilla lacus nec metus. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Ligula congue sollicitudin erat viverra ac tincidunt nam. Cras eleifend turpis fames primis vulputate ornare sagittis. Cubilia curae hac habitasse platea dictumst lorem ipsum. Tempus leo eu aenean sed diam urna tempor. Taciti sociosqu ad litora torquent per conubia nostra. Maximus eget fermentum odio phasellus non purus est. Finibus facilisis dapibus etiam interdum tortor ligula congue. Nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Cursus mi pretium tellus duis convallis tempus leo. Ut hendrerit semper vel class aptent taciti sociosqu. Eros lobortis nulla molestie mattis scelerisque maximus eget. Ante condimentum neque at luctus nibh finibus facilisis. Arcu dignissim velit aliquam imperdiet mollis nullam volutpat. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Vitae pellentesque sem placerat in id cursus mi. Nisl malesuada lacinia integer nunc posuere ut hendrerit. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Suspendisse aliquet nisi sodales consequat magna ante condimentum. Euismod quam justo lectus commodo augue arcu dignissim. Venenatis ultrices proin libero feugiat tristique accumsan maecenas. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Nec metus bibendum egestas iaculis massa nisl malesuada. Natoque penatibus et magnis dis parturient montes nascetur. Vestibulum fusce dictum risus blandit quis suspendisse aliquet. Tincidunt nam porta elementum a enim euismod quam.",
   },
   {
     id: 6,
@@ -60,75 +60,72 @@ const tourCards = [
     title: "Best of Paris In 7 days Tour",
     price: "1500$",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ex necessitatibus quas voluptatibus qui accusantium nemo quis temporibus eligendi consequuntur totam, dolorem esse amet nam quisquam laboriosam iusto suscipit.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Urna tempor pulvinar vivamus fringilla lacus nec metus. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Ligula congue sollicitudin erat viverra ac tincidunt nam. Cras eleifend turpis fames primis vulputate ornare sagittis. Cubilia curae hac habitasse platea dictumst lorem ipsum. Tempus leo eu aenean sed diam urna tempor. Taciti sociosqu ad litora torquent per conubia nostra. Maximus eget fermentum odio phasellus non purus est. Finibus facilisis dapibus etiam interdum tortor ligula congue. Nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Cursus mi pretium tellus duis convallis tempus leo. Ut hendrerit semper vel class aptent taciti sociosqu. Eros lobortis nulla molestie mattis scelerisque maximus eget. Ante condimentum neque at luctus nibh finibus facilisis. Arcu dignissim velit aliquam imperdiet mollis nullam volutpat. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Vitae pellentesque sem placerat in id cursus mi. Nisl malesuada lacinia integer nunc posuere ut hendrerit. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Suspendisse aliquet nisi sodales consequat magna ante condimentum. Euismod quam justo lectus commodo augue arcu dignissim. Venenatis ultrices proin libero feugiat tristique accumsan maecenas. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Nec metus bibendum egestas iaculis massa nisl malesuada. Natoque penatibus et magnis dis parturient montes nascetur. Vestibulum fusce dictum risus blandit quis suspendisse aliquet. Tincidunt nam porta elementum a enim euismod quam.",
   },
 ];
-// const TourCard = () => {
-//   return (
-//     <div className="grid content-center  grid-cols-3 justify-items-center h-min">
-//       {tourCards.map(({ id, img, title, content }) => {
-//         return (
-//           <TourCardItem key={id} img={img} title={title} content={content} />
-//         );
-//       })}
-//     </div>
-//   );
-// };
 
 const TourCard = () => {
   const [tours, setTours] = useState(tourCards);
 
   const removeTour = (id) => {
-    const newTours = tours.filter((tour) => tour.id !== id);
-    setTours(newTours);
+    setTours(tours.filter((tour) => tour.id !== id));
   };
 
+  const reset = () => setTours(tourCards);
+
   return (
-    <div className="grid content-center justify-items-center grid-cols-3 w-300 h-min ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-4 pb-20">
       {tours.map((tour) => (
         <TourCardItem key={tour.id} {...tour} removeTour={removeTour} />
       ))}
+
+      {tours.length === 0 && (
+        <div className="col-span-full flex flex-col items-center mt-20">
+          <h2 className="text-2xl mb-4">No Tours Left</h2>
+          <button
+            className="bg-green-600 text-white px-8 py-2 rounded-xl hover:bg-green-600 transition-colors"
+            onClick={reset}
+          >
+            Refresh
+          </button>
+        </div>
+      )}
     </div>
   );
 };
-// const TourCardItem = ({ img, title, content }) => {
-//   const [item, setItem] = useState(tourCards);
-//   const removeItem = () => {
-//     setItem();
-//   };
-//   return (
-//     <div className="w-80 h-100 mt-30 flex flex-col justify-center items-center">
-//       <img src={img} alt="" className="w-80 h-80" />
-//       <h1>{title}</h1>
-//       <p className="p-4">{content}</p>
-//       <div className="bg-white text-green-500 border-2 border-solid border-green-500 w-70 h-10 rounded-md flex justify-center items-center">
-//         <button onClick={removeItem}>Not interested</button>
-//       </div>
-//     </div>
-//   );
-// };
+
 const TourCardItem = ({ id, img, title, content, removeTour, price }) => {
+  const [isMore, setIsMore] = useState(false);
+  let newText = !isMore ? `${content?.substring(0, 200)}...` : content;
+
   return (
-    <div className="w-90 mt-10 flex flex-col items-center border-none rounded-xl shadow-sm pb-4">
-      <div className="relative w-90 h-80">
-        <img
-          src={img}
-          alt={title}
-          className="w-full h-full object-cover rounded-xl"
-        />
-        <p className="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 rounded-tr-xl">
+    <div className="bg-white flex flex-col items-center rounded-xl shadow-lg overflow-hidden border border-gray-100">
+      <div className="relative w-full h-64">
+        <img src={img} alt={title} className="w-full h-full object-cover" />
+        <p className="absolute top-0 right-0 bg-green-600 text-white px-4 py-1 font-bold">
           ${price}
         </p>
       </div>
-      <h1 className="font-bold text-xl mt-2">{title}</h1>
-      <p className="p-4 text-gray-600 ">{content}</p>
 
-      <button
-        onClick={() => removeTour(id)}
-        className="text-green-500 border-2 border-green-500 px-4 py-2 rounded-md w-70 h-10 flex justify-center items-center hover:bg-green-500 hover:text-white  transition-colors"
-      >
-        Not interested
-      </button>
+      <div className="p-6 flex flex-col items-center">
+        <h1 className="font-bold text-xl text-center mb-3">{title}</h1>
+        <p className="text-gray-600 mb-2">
+          {newText}
+          <button
+            className="text-green-600 font-semibold ml-2"
+            onClick={() => setIsMore(!isMore)}
+          >
+            {isMore ? "show less" : "read more"}
+          </button>
+        </p>
+
+        <button
+          onClick={() => removeTour(id)}
+          className="mt-4 text-green-600 border border-green-600 px-4 py-2 rounded-md w-full hover:bg-green-600 hover:text-white transition-all"
+        >
+          Not interested
+        </button>
+      </div>
     </div>
   );
 };
