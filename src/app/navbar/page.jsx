@@ -29,14 +29,12 @@ export default function ColorPage() {
 
   return (
     <div className="max-w-screen text-black flex justify-between px-10 bg-[#c9c6c6] h-18 items-center">
-      {/* Logo */}
       <div>
         <h1>
           Coding <span className="text-sky-400">Addict</span>
         </h1>
       </div>
 
-      {/* Desktop Links */}
       <ul className="hidden lg:flex gap-4">
         <li>Home</li>
         <li>About</li>
@@ -45,7 +43,6 @@ export default function ColorPage() {
         <li>Profile</li>
       </ul>
 
-      {/* Desktop Socials */}
       <ul className="hidden lg:flex gap-2">
         <a href="https://www.facebook.com/tenger.erdene.battulga.2025">
           <img src="/facebook.svg" className="w-4" />
@@ -61,12 +58,8 @@ export default function ColorPage() {
         </a>
       </ul>
 
-      {/* Mobile Hamburger */}
       <button
-      onClick={() => setOpen(!open)}
-       onMouseEnter={() => setOpen(true)}
-onMouseLeave={() => setOpen(false)}
- 
+        onClick={() => setOpen(!open)}
         className="relative w-8 h-6 flex flex-col justify-between lg:hidden"
         aria-label="Toggle menu"
       >
@@ -77,7 +70,7 @@ onMouseLeave={() => setOpen(false)}
         />
         <span
           className={`h-1 w-full bg-black rounded transition-opacity duration-300 ${
-            open ? "-rotate-90 translate-y-1.5 translate-x-2.5":"" 
+            open ? "-rotate-90 translate-y-1.5 translate-x-2.5" : ""
           }`}
         />
         <span
@@ -87,17 +80,16 @@ onMouseLeave={() => setOpen(false)}
         />
       </button>
 
-      {/* Mobile Menu */}
       <div
         className={`absolute top-18 left-0 w-full bg-[#c9c6c6] flex flex-col items-center gap-4 py-6 lg:hidden transition-all duration-300 ${
           open ? "block" : "hidden"
         }`}
       >
-        <a>Home</a>
-        <a>About</a>
-        <a>Projects</a>
-        <a>Contact</a>
-        <a>Profile</a>
+        <a className="cursor-pointer">Home</a>
+        <a className="cursor-pointer">About</a>
+        <a className="cursor-pointer">Projects</a>
+        <a className="cursor-pointer">Contact</a>
+        <a className="cursor-pointer">Profile</a>
       </div>
     </div>
   );
